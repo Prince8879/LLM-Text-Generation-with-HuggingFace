@@ -77,7 +77,7 @@ Text-Generation-Using-Pretrained-LLM/
 Clone this repository
 
 ```bash
-git clone https://github.com/your-username/Text-Generation-Using-Pretrained-LLM.git
+git clone https://github.com/PrinceTiwari/LLM-Text-Generation-with-HuggingFace.git
 ```
 
 Move into the project folder
