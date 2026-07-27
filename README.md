@@ -1,222 +1,102 @@
-# Text Generation using Pre-trained Large Language Models (LLMs)
+# LLM Text Generation with Hugging Face
 
-A Natural Language Processing (NLP) project demonstrating text generation using pre-trained Large Language Models (LLMs) from the Hugging Face Transformers library.
-
-This project allows users to generate different types of text, including stories, technical explanations, and question-answer responses while experimenting with various text generation parameters.
-
----
-
-## Project Objective
-
-The objective of this project is to explore text generation using pre-trained language models and understand how different generation parameters influence the quality, diversity, and creativity of generated text.
-
----
+A simple NLP project that demonstrates text generation using pre-trained Large Language Models (LLMs) with the Hugging Face Transformers library.
 
 ## Features
 
-- Load different pre-trained Hugging Face language models
 - Story Generation
 - Technical Explanation Generation
 - Question & Answer Generation
-- Custom user prompts
-- Adjustable generation parameters:
+- Custom Prompt Input
+- Adjustable Parameters:
   - Temperature
-  - Maximum Length
-  - Top-K Sampling
-  - Top-P (Nucleus Sampling)
-- Compare outputs using different parameter settings
-
----
+  - Max Length
+  - Top-K
+  - Top-P
 
 ## Technologies Used
 
 - Python
-- Google Colab
 - Hugging Face Transformers
 - PyTorch
-
----
+- Google Colab
 
 ## Supported Models
-
-You can use any compatible Hugging Face text generation model, such as:
 
 - GPT-2
 - DistilGPT2
 - EleutherAI/gpt-neo-125M
 
----
-
-## Repository Structure
-
-```
-Text-Generation-Using-Pretrained-LLM/
-│
-├── Assignment2_Text_Generation.ipynb
-├── README.md
-├── requirements.txt
-├── LICENSE
-├── .gitignore
-├── generated_outputs/
-│   ├── story_output.txt
-│   ├── technical_output.txt
-│   ├── qa_output.txt
-│   └── parameter_comparison.md
-│
-└── screenshots/
-    ├── story_generation.png
-    ├── technical_explanation.png
-    ├── qa_generation.png
-    └── comparison.png
-```
-
----
-
 ## Installation
 
-Clone this repository
+Clone the repository:
 
 ```bash
-git clone https://github.com/PrinceTiwari/LLM-Text-Generation-with-HuggingFace.git
+git clone https://github.com/<your-github-username>/LLM-Text-Generation-with-HuggingFace.git
 ```
 
-Move into the project folder
-
-```bash
-cd Text-Generation-Using-Pretrained-LLM
-```
-
-Install the required libraries
+Install the required packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-## Required Libraries
-
-```
-transformers
-torch
-accelerate
-sentencepiece
-```
-
----
-
 ## How to Run
 
-1. Open the notebook in Google Colab.
+1. Open `Text_Generation_Using_HuggingFace.ipynb` in Google Colab or Jupyter Notebook.
 2. Install the required libraries.
-3. Choose a pre-trained model.
-4. Select one of the following tasks:
+3. Select a pre-trained model.
+4. Choose a task:
    - Story Generation
    - Technical Explanation
    - Question & Answer
-5. Enter the required prompt.
-6. Set the generation parameters.
-7. Run the notebook to generate text.
+5. Enter the generation parameters.
+6. Run the notebook to generate text.
 
----
+## Project Screenshots
 
-## Generation Parameters
+### Model Loading
 
-| Parameter | Description |
-|-----------|-------------|
-| Temperature | Controls randomness and creativity |
-| Max Length | Maximum number of generated tokens |
-| Top-K | Limits candidate words to the top K choices |
-| Top-P | Uses nucleus sampling for more natural text generation |
+![Model Loading](model_loading.png)
 
----
+### Generated Output
 
-## Example Tasks
+![Generated Output](output.png)
 
-### Story Generation
+### Parameter Comparison
 
-**Prompt**
+![Parameter Comparison](parameter_comparison.png)
 
-```
-Once upon a time in a magical forest...
-```
+### Experiment Comparison
 
----
-
-### Technical Explanation
-
-**Prompt**
-
-```
-Explain Cloud Computing in simple terms.
-```
-
----
-
-### Question & Answer
-
-**Prompt**
-
-```
-Question:
-What is Artificial Intelligence?
-
-Answer:
-```
-
----
-
-## Parameter Comparison
-
-| Experiment | Temperature | Max Length | Top-K | Top-P | Expected Behavior |
-|------------|------------|------------|--------|--------|-------------------|
-| Experiment 1 | 0.3 | 80 | 20 | 0.80 | More focused and deterministic |
-| Experiment 2 | 0.7 | 100 | 50 | 0.90 | Balanced creativity |
-| Experiment 3 | 1.0 | 150 | 100 | 0.95 | Highly creative and diverse |
-
----
+![Experiment Comparison](comparison.png)
 
 ## Learning Outcomes
 
-Through this project, you will learn:
+- Understanding pre-trained LLMs
+- Text generation using Hugging Face Transformers
+- Prompt-based text generation
+- Effect of Temperature, Top-K, Top-P, and Max Length
 
-- How pre-trained language models work
-- Using Hugging Face Transformers
-- Text generation using pipelines
-- Prompt engineering basics
-- Effects of temperature, top-k, top-p, and max_length
-- Comparing generated outputs
+## Repository Structure
 
----
-
-## Future Improvements
-
-- Streamlit Web Application
-- Gradio Interface
-- Support for Llama Models
-- Support for Mistral Models
-- Multiple response generation
-- Save outputs automatically
-- Interactive GUI
-
----
-
-## References
-
-- Hugging Face Transformers Documentation
-- Hugging Face Model Hub
-- PyTorch Documentation
-
----
-
-## Author
-
-**Prince Tiwari**
-
-B.Tech Student | Aspiring DevOps Engineer | AI & Cloud Computing Enthusiast
-
----
+```
+LLM-Text-Generation-with-HuggingFace/
+│
+├── LICENSE
+├── README.md
+├── requirements.txt
+├── Text_Generation_Using_HuggingFace.ipynb
+├── model_loading.png
+├── output.png
+├── parameter_comparison.png
+└── comparison.png
+```
 
 ## License
 
 This project is licensed under the MIT License.
+
+## Author
+
+**Prince Tiwari**
