@@ -100,3 +100,5 @@ This project is licensed under the MIT License.
 ## Author
 
 **Prince Tiwari**
+Prince8879 https://github.com/Prince8879/LLM-Text-Generation-with-HuggingFace
+
